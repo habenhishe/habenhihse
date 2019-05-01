@@ -1,71 +1,70 @@
-html, body{
-  height:100%;
+height:100%;
   margin: 0;
 }
-
+#title {
+/* position:fixed;
+top:0px;
+left:0px; */
+padding:10px;
+margin:0px;
+width:100%;
+background-color:#BCC6CC;
+color: black;
+text-align:center;
+z-index:10;
+}
 body {
-   background-image:url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
+background-image:url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
 }
-  
-.row{
-  position:relative;
-  margin-left:10%;
-  margin-right:10%;
+.row {
+position:relative;
+
+}
+.white{
+border: 1px solid black;
+width: 60px;
+height: 60px;
+background-color:white;
+color: inherit;
+float:left;
 }
 
+.black{
+border: 1px solid black;
+width: 60px;
+height: 60px;
+background-color:#787878;
+color: inherit;
+float:left;
+}
 .clear {
   clear:both;
 }
 
-.white, .black {
-  border: 1px solid black;
-  width: 10%;
-  height: 60px;
-  float:left;
-}
-
-.white{
-  background-color:#ffffff; 
-}
-
-.black{
-  background-color:#787878; 
-}
-
-
-#container {
-  margin-top:20%;
-  margin-left:10%;
-  margin-right:10%;
-  margin-bottom:5%;
-}
-
 #footer {
-  background-color:lightyellow;
-  padding-top:10px;
-  margin-top:10px;
-  text-align:center;
+ background-color:#BCC6CC;
+ border:solid 1px;
+ padding: 10px;
+ margin:10px;
+ text-align:center;
+}
+  #container {
+margin-top:20%;
+margin-left:10%;
+margin-right:10%;
+margin-bottom:5%;
+}
+    img {
+margin-left: 5px;
+margin-top:10px;
+}
+.center{
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
 }
 
-#title {
-  height:10px;
-  position:fixed;
-  top:0px;
-  left:0px
-  ;padding:10px;
-  margin: 0px;
-  width:100%;
-  background-color:solid lightyellow;
-  text-align:center;
-  z-index:10;
-   font-family:'JustLettersMedium';
-  font-weight: normal;
-  font-style: normal;
-  font-size:36px;
-}
-
-#footer {
-  background-color:solid lightyellow;
-  padding-top:10px;
-  text-align:center;
+.spaceTopBottom {
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
