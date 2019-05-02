@@ -1,3 +1,4 @@
+html, body {
 height:100%;
   margin: 0;
 }
@@ -41,13 +42,29 @@ float:left;
   clear:both;
 }
 
+
+
+
 #footer {
- background-color:#BCC6CC;
- border:solid 1px;
- padding: 10px;
- margin:10px;
+
+
+ padding:10px;
+
+
+ margin-top:10px;
+
+
+ margin-bottom:10px;
+
+
+ background-color:white;
+
+
  text-align:center;
+
+
 }
+
   #container {
 margin-top:20%;
 margin-left:10%;
