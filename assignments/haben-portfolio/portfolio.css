@@ -8,7 +8,7 @@ font-size: 16px;
 line-height: 24px;
 }
 
-a { color: #E1F71E; }
+a { color: Black; }
 a:hover { color: #23D2FE; }
 
 #wrap { 
@@ -60,7 +60,7 @@ display: inline;
 }
 
 #topmenu {
-background: #f1f1f1;
+background: #23D2FE;
 padding: 10px 20px;
 border-bottom: 1px solid #e1e1e1;
 border-top: 1px solid #e1e1e1;
