@@ -8,13 +8,13 @@ font-size: 16px;
 line-height: 24px;
 }
 
-a { color: #000088; }
+a { color: #E1F71E; }
 a:hover { color: #23D2FE; }
 
 #wrap { 
 margin: 40px auto;
 width: 940px;
-background: #fff;
+background: #23D2FE;
 
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
