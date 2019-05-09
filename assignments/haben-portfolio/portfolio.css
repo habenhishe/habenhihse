@@ -32,7 +32,7 @@ border-radius: 10px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 
-background: #f9f9f9;
+background: #3f3f3f;
 padding: 20px 0 40px 0;
 }
 #header h1 {
@@ -60,7 +60,7 @@ display: inline;
 }
 
 #topmenu {
-background: #23D2FE;
+background: #3f3f3f;
 padding: 10px 20px;
 border-bottom: 1px solid #e1e1e1;
 border-top: 1px solid #e1e1e1;
