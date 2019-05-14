@@ -99,7 +99,12 @@ list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
 
 .cleft { float: left; width: 280px; margin: 10px 0; }
 .cright { float: right; width: 280px; margin: 10px 0; }
-
+#content{
+  font-weight: normal;
+color: #171717;
+font-size: 22px;
+}
+  
 #footer { 
 -webkit-border-bottom-right-radius: 10px;
 -webkit-border-bottom-left-radius: 10px;
