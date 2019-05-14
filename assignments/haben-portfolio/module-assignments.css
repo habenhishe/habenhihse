@@ -13,7 +13,9 @@ background-repeat:repeat;
 
 a { color: black; }
 a:hover { color: black; }
-
+a.h3 {
+  color="black"
+}
 #wrap { 
 margin: 40px auto;
 width: 940px;
