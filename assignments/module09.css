@@ -1,5 +1,4 @@
-
-  body {
+ body {
     height: 200px;
     background: beige;
   }
@@ -8,4 +7,4 @@
     border-radius: 4px; /* rounds corners */
     background: blue;
     position: absolute;
-  }
+}
