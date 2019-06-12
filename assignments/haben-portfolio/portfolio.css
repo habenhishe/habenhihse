@@ -10,13 +10,13 @@ background-image: url("https://i.imgur.com/gLaoRNH.jpg");
 background-repeat:repeat;
 }
 
-a { color: #FFEE9F; }
-
+a { color: #00a9ff; }
+a:hover { color: white; }
 
 #wrap { 
 margin: 40px auto;
 width: 940px;
-background: #FFEE9F;
+background: #c8cace;
 
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -34,14 +34,14 @@ border-radius: 10px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 
-background: #3f3f3f;
+background: #00a9ff;
 padding: 20px 0 40px 0;
 }
 #header h1 {
 margin: 0;
 padding: 0 0 0 30px;
 font-weight: bold;
-color: #FFEE9F;
+color: black;
 font-size: 38px;
 line-height: 65px;
 letter-spacing: -1px;
@@ -56,8 +56,8 @@ font-weight: normal;
 color: #171717;
 font-size: 22px;
 letter-spacing: -1px;
-background: #FFEE9F;
-border: 1px solid #FFE25F;
+background: #c8cace;
+border: 1px solid #c8cace;
 display: inline;
 }
 
@@ -110,7 +110,7 @@ list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
 border-bottom-right-radius: 10px;
 border-bottom-left-radius: 10px;
 
-background: #3f3f3f;
+background: #00a9ff;
 color: #fff;
 padding: 20px;
 border-top: 1px solid #1f1f1f;
