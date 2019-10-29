@@ -28,7 +28,21 @@ padding: 8px;
   transition: 0.3s;
   border-radius: 0;
 }
+.display{
+padding: 8px;
+  width: 20%;
+
+  color: tomato;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+
+  transition: 0.3s;
+  border-radius: 0;
 }
+
+
+
 
 body {
 background-color: lightblue;
@@ -39,6 +53,9 @@ background-color: lightblue;
   background-color: #bbb;}
   
   .rem:hover {
+  background-color: #bbb;}
+  
+  .desplay:hover {
   background-color: #bbb;}
   
 .hidden { display: none; }
@@ -55,24 +72,28 @@ background-color: lightblue;
   <div class="controls">
     <button class="add">Add Customer</button>
     <button class="rem">Delete Customer</button>
+    <button class="display">Display</button>
   </div><br><br><br>
   <div id="firstinput">
-<div class="formfield"><input placeholder="First Name" name="name"/></div>
-    <div class="formfield"><input placeholder="Last Name" name="name"/></div>
-    <div class="formfield"><button class="del"><b>-</b></button></div>
+<div class="formfield"><input placeholder="First Name" name="first name"/></div>
+    <div class="formfield"><input placeholder="Last Name" name="last name"/></div>
+   <label><input type="checkbox" value="display" name="name"></lable>
 </div>
  </div>
 <div>
   <div class="example-template">
     <div class="formfield"><input placeholder="First Name" name="name"/></div>
     <div class="formfield"><input placeholder="Last Name" name="name"/></div>
-    <div class="formfield"><button class="del"><b>-</b></button></div>
+  <label> <input type="checkbox" value="display" name="name"></lable>
   </div>
 </div>
 
-
+<div id="text">
+    
+  </div>
 
 <script>
+
 (function($) {
   "use strict";
   
