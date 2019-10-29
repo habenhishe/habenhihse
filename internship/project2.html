@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+body {
+background-color: lightblue;
+
+
+
+}
+.hidden { display: none; }
+.formfield { float: left; }
+.example-template { clear: left; }
+</style>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="myDIV" class="header">
+<h2 style="margin:5px">My Customers Name List</h2>
+ 
+<div class="hidden">
+  <div class="example-template">
+    <div class="formfield"><input placeholder="First Name" name="name"></div>
+    <div class="formfield"><input placeholder="Last Name" name="name"></div>
+ 
+    <div class="formfield"><button class="del">-</button></div>
+  </div>
+</div>
+
+<div class="edit-area">
+  <div class="controls">
+    <button class="add">Add Customer</button>
+    <button class="rem">Delete Customer</button>
+  </div>
+
+</div>
+
+<script>
+(function($) {
+  "use strict";
+  
+  var itemTemplate = $('.example-template').detach(),
+      editArea = $('.edit-area'),
+      itemNumber = 1;
+  
+  $(document).on('click', '.edit-area .add', function(event) {
+    var item = itemTemplate.clone();
+    item.find('[name]').attr('name', function() {
+      return $(this).attr('name') + '_' + itemNumber;
+    });
+    ++itemNumber;
+    item.appendTo(editArea);
+  });
+  
+  $(document).on('click', '.edit-area .rem', function(event) {
+    editArea.children('.example-template').last().remove();
+  });
+  
+  $(document).on('click', '.edit-area .del', function(event) {
+    var target = $(event.target),
+        row = target.closest('.example-template');
+    row.remove();
+  });
+}(jQuery));
+</script>
+</body>
+</html>
