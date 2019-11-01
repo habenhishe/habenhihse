@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Add / Remove Table Rows</title>
+<style>
+    table{
+        width: 100%;
+        margin: 20px 0;
+        border-collapse: collapse;
+    }
+    table, th, td{
+        border: 1px solid #cdcdcd;
+    }
+    table th, table td{
+        padding: 5px;
+        text-align: left;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+
+
+
+  
+
+
+
+    $(document).ready(function(){
+        $(".add-row").click(function(){
+            var name = $("#name").val();
+            var name1 = $("#name1").val();
+            var markup = "<tr><td><input type='checkbox' name='record'></td><td>" + name + "</td><td>" + name1 + "</td></tr>";
+            $("table tbody").append(markup);
+        });
+        
+        // Find and remove selected table rows
+        $(".delete-row").click(function(){
+            $("table tbody").find('input[name="record"]').each(function(){
+                if($(this).is(":checked")){
+                    $(this).parents("tr").remove();
+                }
+
+              
+            });
+        });
+    }); 
+    
+  /////
+$( "form" ).submit(function( event ) {
+    var newFormData=[];
+    jQuery('#table tr:not(:first)').each(function(i){
+       	var tb=jQuery(this);
+        var obj={};
+        tb.find('input').each(function(){
+           obj[this.name]=this.value;
+        });
+        obj['row']=i;
+        newFormData.push(obj);
+    });
+    console.log(newFormData);
+    document.getElementById('output').innerHTML=JSON.stringify(newFormData);
+  event.preventDefault();
+});
+  
+</script>
+</head>
+<body>
+    <form>
+        <input type="text" name="firstname"  id="name" placeholder="First Name" value="">
+        <input type="text" name="lastname" id="name1" placeholder="Last Name" value="">
+        <input type="button" class="add-row" value="Add Row">
+    
+    <table id="tabel">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="record"></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="delete-row">Delete Row</button>
+    <button type="submit" id="json" class="display-raw" onclick="alert(this.json)">Display Row</button>
+   <div></div>
+   </form>
+</body> 
+</html>
