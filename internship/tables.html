@@ -75,22 +75,25 @@
         });
     }); 
     
-  /////
-$( "form" ).submit(function( event ) {
-    var newFormData=[];
-    jQuery('#table tr:not(:first)').each(function(i){
-       	var tb=jQuery(this);
-        var obj={};
-        tb.find('input').each(function(){
-           obj[this.name]=this.value;
-        });
-        obj['row']=i;
-        newFormData.push(obj);
-    });
-    console.log(newFormData);
-    document.getElementById('output').innerHTML=JSON.stringify(newFormData);
-  event.preventDefault();
-});
+ $( "form" ).submit(function( event ) {
+    	var newFormData=[];
+    	jQuery('#table tr:not(:first)').each(function(i){
+       		var tb=jQuery(this);
+        	var obj={};
+        	var cell=tb.find('td');
+        	alert($("#table tr:first")[1].innerHTML);
+        
+        	obj[$("#fname").innerHTML] = cell[1].innerHTML;        
+        
+        	obj[$("#lname").innerHTML] = cell[2].innerHTML;
+             
+       		 obj['row']=i;
+        	newFormData.push(obj);
+   		 });
+    	console.log(newFormData);
+   	 	document.getElementById('div').innerHTML=JSON.stringify(newFormData);
+ 	    event.preventDefault();
+	});
   
 </script>
 
