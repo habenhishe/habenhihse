@@ -43,15 +43,12 @@
         </tbody>
     </table>
     <button type="button" class="delete-row">Delete Row</button>
-    <button type="submit" id="json" class="display-raw" onclick="alert(this.json)">Display Row</button>
-   <div></div>
+    <button onclick="myFunction()">Display</button>
+   <p id="div"></p>
    </form>
    
    <script>
 
-
-
-  
 
 
 
@@ -75,26 +72,11 @@
         });
     }); 
     
- $( "form" ).submit(function( event ) {
-    	var newFormData=[];
-    	jQuery('#table tr:not(:first)').each(function(i){
-       		var tb=jQuery(this);
-        	var obj={};
-        	var cell=tb.find('td');
-        	alert($("#table tr:first")[1].innerHTML);
-        
-        	obj[$("#fname").innerHTML] = cell[1].innerHTML;        
-        
-        	obj[$("#lname").innerHTML] = cell[2].innerHTML;
-             
-       		 obj['row']=i;
-        	newFormData.push(obj);
-   		 });
-    	console.log(newFormData);
-   	 	document.getElementById('div').innerHTML=JSON.stringify(newFormData);
- 	    event.preventDefault();
-	});
-  
+
+function myFunction() {
+  var x = document.getElementById("tabel").rows[1].cells.length;
+  document.getElementById("div").innerHTML = "Found " + x + " cells in the first tr element.";
+}
 </script>
 
 </body> 
